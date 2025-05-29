@@ -1,5 +1,5 @@
 
-SELECT * FROM Customers;
+-- we've made basic Customers and Orders tables
+-- now we will join them on the ID they have in common - customer ID
 
--- SELECT email FROM Customers;
--- selects all emails starting w/ E
+SELECT * FROM customers INNER JOIN orders ON customers.customer_id = orders.customerid;
